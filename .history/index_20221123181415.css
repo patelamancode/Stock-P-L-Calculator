@@ -38,10 +38,3 @@
     border: 1px solid;
     border-radius: 5px;
   }
-
-  #result-display{
-    display: none;
-    margin-top: 2rem;
-    font-style: italic;
-    font-weight: 100;
-  }

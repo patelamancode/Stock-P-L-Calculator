@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .app-title {
+    margin: 2rem 0;
+  }
+  label{
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    text-align: left;
+    font-family: monospace;
+  }
+  input{
+    border: 2px solid black;
+  }

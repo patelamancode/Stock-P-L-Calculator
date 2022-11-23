@@ -24,24 +24,7 @@
     font-family: monospace;
   }
   input{
-    border: 2px solid rgb(134, 55, 207);
+    border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
-  }
-  #check-btn{
-    margin: auto;
-    text-align: center;
-    margin-top: 2rem;
-    width: 40%;
-    padding: 5px 0px;
-    background-color:rgba(143, 82, 201, 0.521);
-    border: 1px solid;
-    border-radius: 5px;
-  }
-
-  #result-display{
-    display: none;
-    margin-top: 2rem;
-    font-style: italic;
-    font-weight: 100;
   }
