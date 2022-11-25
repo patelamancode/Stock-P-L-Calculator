@@ -47,10 +47,6 @@
   }
 
   .refresh-btn{
-    display: none;
     cursor: pointer;
-    margin: auto;
-    padding-top: 2rem;
-    font-size: larger;
-    color: rgba(49, 10, 85, 0.952);
+    margin: right;
   }

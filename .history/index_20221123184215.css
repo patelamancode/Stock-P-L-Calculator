@@ -41,16 +41,6 @@
 
   #result-display{
     display: none;
-    padding-top: 1rem;
+    margin-top: 2rem;
     font-style: italic;
-    margin: auto;
-  }
-
-  .refresh-btn{
-    display: none;
-    cursor: pointer;
-    margin: auto;
-    padding-top: 2rem;
-    font-size: larger;
-    color: rgba(49, 10, 85, 0.952);
   }

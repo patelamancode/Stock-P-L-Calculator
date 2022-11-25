@@ -29,13 +29,40 @@ const submitHandler = function(){
 }
 
 checkButton.addEventListener('click', function(){
-    submitHandler();
+    submitHandler;
     reload.style.display = "flex";
 })
 
 
 
 
-reload.addEventListener('click', function(){
-    window.location.reload();
-})
+
+
+
+
+
+
+
+// const profitAmount = function(){
+    
+// }
+
+// const profitPercentage = function(){
+    
+// }
+
+// function showResult(){
+//     // validation needed
+//     profitAmount();
+//     profitPercentage();
+//     resultDisplay.style.display = "flex";
+//     let result = resultDisplay.innerText =  `Hey, the {profit / loss} is {amount} and the percent is {percentage%}`;
+//     return result;
+// }
+
+
+
+
+// reload.addEventListener('click', function(){
+//     window.location.reload();
+// })

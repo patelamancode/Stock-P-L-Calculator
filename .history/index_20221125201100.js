@@ -20,22 +20,45 @@ const calculateProfitAndLoss = function(initial, count, final){
     }
 }
 
-const submitHandler = function(){
-    let ip = initialValue.value;
-    let qny = stockCount.value;
-    let cp =  currentValue.value;
-
-    calculateProfitAndLoss(ip, qny, cp);
-}
-
-checkButton.addEventListener('click', function(){
-    submitHandler();
-    reload.style.display = "flex";
-})
+calculateProfitAndLoss(10, 5, 100)
 
 
 
 
-reload.addEventListener('click', function(){
-    window.location.reload();
-})
+
+
+
+
+
+
+
+// const profitAmount = function(){
+    
+// }
+
+// const profitPercentage = function(){
+    
+// }
+
+// function showResult(){
+//     // validation needed
+//     profitAmount();
+//     profitPercentage();
+//     resultDisplay.style.display = "flex";
+//     let result = resultDisplay.innerText =  `Hey, the {profit / loss} is {amount} and the percent is {percentage%}`;
+//     return result;
+// }
+
+
+// checkButton.addEventListener('click', function(){
+//     // showResult();
+//     reload.style.display = "flex";
+//     // console.log (typeof(parseInt(initialValue.value)));
+//     // console.log(stockCount.value);
+//     // console.log(currentValue.value);
+//     console.log(inputAmount);
+// })
+
+// reload.addEventListener('click', function(){
+//     window.location.reload();
+// })
