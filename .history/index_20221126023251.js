@@ -21,14 +21,11 @@ const calculateProfitAndLoss = function(initial, count, final){
     if(initial > final){
         const loss = (final-initial) * count;
         const lossPercent = (loss / initial) * 100;
-        resultDisplay.style.color = "red";
-        resultDisplay.style.
-        showOutputMessage(`Hey the loss is Rs.${loss} and the percent is ${lossPercent}%`)
+        showOutputMessage(`Hey the loss is ${loss} and the percent is ${lossPercent}%`)
     } else if(initial < final){
         const profit = (final-initial) * count;
         const profitPercent = (profit / initial) * 100;
-        resultDisplay.style.color = "green";
-        showOutputMessage(`Hey the profit is Rs.${profit} and the percent is ${profitPercent}%`);
+        showOutputMessage(`Hey the profit is ${profit} and the percent is ${profitPercent}%`);
     } else {
         showOutputMessage(`Hey you have No Loss & No Profit 🤗`);
     }
