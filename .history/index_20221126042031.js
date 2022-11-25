@@ -1,38 +1,37 @@
 const checkButton = document.querySelector('#check-btn');
-const initialValue = document.querySelector('#initial-price-input');
+const initialValue =document.querySelector('#initial-price-input');
 const stockCount = document.querySelector('#stock-count');
 const currentValue = document.querySelector('#current-price-input');
 const resultDisplay = document.querySelector('#result-display');
 const reload = document.querySelector('.refresh-btn');
 
-function submitHandler() {
+function submitHandler(){
     let ip = Number(initialValue.value);
-    let qny = Number(stockCount.value);
-    let cp = Number(currentValue.value);
-
-    if (!ip || !qny || !cp) {
+    let qny = stockCount.value;
+    let cp =  currentValue.value;
+    if(!ip || !qny || !cp){
         resultDisplay.style.color = "blue";
-        showOutputMessage("Please make sure all input fields are with valid entries to proceed 🤪")
-    } else {
+        showOutputMessage("Please make some input to proceed ☹️")
+    }else{
         calculateProfitAndLoss(ip, qny, cp);
     }
-
+    
 }
 
-function showOutputMessage(msg) {
+function showOutputMessage(msg){
     resultDisplay.innerHTML = msg;
     resultDisplay.style.display = "flex"
 }
 
-const calculateProfitAndLoss = function (initial, count, final) {
-    if (initial > final) {
-        const loss = ((final - initial) * count).toFixed(2);
+const calculateProfitAndLoss = function(initial, count, final){
+    if(initial > final){
+        const loss = ((final-initial) * count).toFixed(2);
         const lossPercent = (loss / initial) * 100;
         resultDisplay.style.color = "red";
         // resultDisplay.style.
         showOutputMessage(`Hey the loss is Rs.(${loss}) and the percent is ${lossPercent}%`)
-    } else if (initial < final) {
-        const profit = ((final - initial) * count).toFixed(2);
+    } else if(initial < final){
+        const profit = ((final-initial) * count).toFixed(2);
         const profitPercent = (profit / initial) * 100;
         resultDisplay.style.color = "green";
         showOutputMessage(`Hey the profit is Rs.(${profit}) and the percent is ${profitPercent}%`);
@@ -42,11 +41,11 @@ const calculateProfitAndLoss = function (initial, count, final) {
 }
 
 
-checkButton.addEventListener('click', function () {
+checkButton.addEventListener('click', function(){
     submitHandler();
     reload.style.display = "flex";
 })
 
-reload.addEventListener('click', function () {
+reload.addEventListener('click', function(){
     window.location.reload();
 })
